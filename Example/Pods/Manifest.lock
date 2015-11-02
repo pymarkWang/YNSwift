@@ -1,0 +1,14 @@
+PODS:
+  - YNSwift (0.1.0)
+
+DEPENDENCIES:
+  - YNSwift (from `../`)
+
+EXTERNAL SOURCES:
+  YNSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  YNSwift: 5f884fbc26de8a962b864816bbac12294baedd40
+
+COCOAPODS: 0.38.2
