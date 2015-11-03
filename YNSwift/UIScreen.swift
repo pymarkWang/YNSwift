@@ -10,7 +10,13 @@ import Foundation
 import UIKit
 
 public extension UIScreen {
-    public static let screenScale = UIScreen.mainScreen().scale
-    public static let screenWidth = UIScreen.mainScreen().bounds.width
-    public static let screenHeight = UIScreen.mainScreen().bounds.height
+    public static var screenScale: CGFloat {
+        return UIScreen.mainScreen().scale
+    }
+    public static var screenWidth: CGFloat {
+        return UIScreen.mainScreen().bounds.width
+    }
+    public static var screenHeight: CGFloat {
+        return UIScreen.mainScreen().bounds.height
+    }
 }

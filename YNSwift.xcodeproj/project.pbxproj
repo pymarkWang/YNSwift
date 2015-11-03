@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */; };
+		49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */; };
 		49CEA1BF1BE7901A0086A2ED /* YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CEA1B41BE7901A0086A2ED /* YNSwift.framework */; };
 		49CEA1C41BE7901A0086A2ED /* YNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */; };
 		49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CE1BE793AA0086A2ED /* NSDate.swift */; };
 		49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CF1BE793AA0086A2ED /* UIColor.swift */; };
+		C7FB234D26B96F2539A2BBF3 /* Pods_YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180EEA62625501677B8C1460 /* Pods_YNSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180EEA62625501677B8C1460 /* Pods_YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB1396FC4322B6A5058DB79 /* Pods-YNSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		434A3EFE150B9D8E37A15DDC /* Pods-YNSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
+		49C8D3C11BE8723A00E8EBF5 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		49CEA1B41BE7901A0086A2ED /* YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEA1B91BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CEA1BE1BE7901A0086A2ED /* YNSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FB234D26B96F2539A2BBF3 /* Pods_YNSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235318B00EAF311233A51237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180EEA62625501677B8C1460 /* Pods_YNSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49CEA1AA1BE7901A0086A2ED = {
 			isa = PBXGroup;
 			children = (
 				49CEA1B61BE7901A0086A2ED /* YNSwift */,
 				49CEA1C21BE7901A0086A2ED /* YNSwiftTests */,
 				49CEA1B51BE7901A0086A2ED /* Products */,
+				C0988F919EA0E3BD490CC31D /* Pods */,
+				235318B00EAF311233A51237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +96,9 @@
 				49CEA1CE1BE793AA0086A2ED /* NSDate.swift */,
 				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
 				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
+				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
+				49C8D3C11BE8723A00E8EBF5 /* BridgeHeader.h */,
 			);
 			path = YNSwift;
 			sourceTree = "<group>";
@@ -90,6 +110,15 @@
 				49CEA1C51BE7901A0086A2ED /* Info.plist */,
 			);
 			path = YNSwiftTests;
+			sourceTree = "<group>";
+		};
+		C0988F919EA0E3BD490CC31D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EB1396FC4322B6A5058DB79 /* Pods-YNSwift.debug.xcconfig */,
+				434A3EFE150B9D8E37A15DDC /* Pods-YNSwift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,10 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49CEA1C81BE7901A0086A2ED /* Build configuration list for PBXNativeTarget "YNSwift" */;
 			buildPhases = (
+				06C25395BD0D90462063926C /* Check Pods Manifest.lock */,
 				49CEA1AF1BE7901A0086A2ED /* Sources */,
 				49CEA1B01BE7901A0086A2ED /* Frameworks */,
 				49CEA1B11BE7901A0086A2ED /* Headers */,
 				49CEA1B21BE7901A0086A2ED /* Resources */,
+				99F12282B8DF7A9085E66D31 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +225,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06C25395BD0D90462063926C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99F12282B8DF7A9085E66D31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49CEA1AF1BE7901A0086A2ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -202,6 +266,7 @@
 				49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */,
 				49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */,
 				49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */,
+				49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +380,7 @@
 		};
 		49CEA1C91BE7901A0086A2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB1396FC4322B6A5058DB79 /* Pods-YNSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -327,12 +393,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = im.yon.YNSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = YNSwift/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		49CEA1CA1BE7901A0086A2ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434A3EFE150B9D8E37A15DDC /* Pods-YNSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -345,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = im.yon.YNSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = YNSwift/BridgeHeader.h;
 			};
 			name = Release;
 		};
