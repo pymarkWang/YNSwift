@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */; };
 		49CEA1BF1BE7901A0086A2ED /* YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CEA1B41BE7901A0086A2ED /* YNSwift.framework */; };
 		49CEA1C41BE7901A0086A2ED /* YNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */; };
 		49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CE1BE793AA0086A2ED /* NSDate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		49CEA1B41BE7901A0086A2ED /* YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEA1B91BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CEA1BE1BE7901A0086A2ED /* YNSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +75,9 @@
 		49CEA1B61BE7901A0086A2ED /* YNSwift */ = {
 			isa = PBXGroup;
 			children = (
-				49CEA1D21BE796DE0086A2ED /* extension */,
+				49CEA1CE1BE793AA0086A2ED /* NSDate.swift */,
+				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
+				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
 			);
 			path = YNSwift;
@@ -86,15 +90,6 @@
 				49CEA1C51BE7901A0086A2ED /* Info.plist */,
 			);
 			path = YNSwiftTests;
-			sourceTree = "<group>";
-		};
-		49CEA1D21BE796DE0086A2ED /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				49CEA1CE1BE793AA0086A2ED /* NSDate.swift */,
-				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
-			);
-			name = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */,
+				49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */,
 				49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +387,7 @@
 				49CEA1CA1BE7901A0086A2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49CEA1CB1BE7901A0086A2ED /* Build configuration list for PBXNativeTarget "YNSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +396,7 @@
 				49CEA1CD1BE7901A0086A2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
