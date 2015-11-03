@@ -33,7 +33,6 @@
 		434A3EFE150B9D8E37A15DDC /* Pods-YNSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
-		49C8D3C11BE8723A00E8EBF5 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		49C8D3C51BE8791C00E8EBF5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		49CEA1B41BE7901A0086A2ED /* YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEA1B91BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,7 +107,6 @@
 				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
 				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
-				49C8D3C11BE8723A00E8EBF5 /* BridgeHeader.h */,
 				49C8D3C21BE878DF00E8EBF5 /* Resources */,
 			);
 			path = YNSwift;
@@ -405,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = im.yon.YNSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = YNSwift/BridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -425,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = im.yon.YNSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = YNSwift/BridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
