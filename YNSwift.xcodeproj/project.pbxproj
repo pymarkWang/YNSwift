@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */; };
 		49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */; };
-		49C8D3C61BE8791C00E8EBF5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C8D3C51BE8791C00E8EBF5 /* Media.xcassets */; };
+		49C8D3C61BE8791C00E8EBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */; };
+		49C8D3CE1BE88E4500E8EBF5 /* re.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3CD1BE88E4500E8EBF5 /* re.swift */; };
 		49CEA1BF1BE7901A0086A2ED /* YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CEA1B41BE7901A0086A2ED /* YNSwift.framework */; };
 		49CEA1C41BE7901A0086A2ED /* YNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */; };
 		49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CE1BE793AA0086A2ED /* NSDate.swift */; };
@@ -33,7 +34,8 @@
 		434A3EFE150B9D8E37A15DDC /* Pods-YNSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
-		49C8D3C51BE8791C00E8EBF5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49C8D3CD1BE88E4500E8EBF5 /* re.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = re.swift; sourceTree = "<group>"; };
 		49CEA1B41BE7901A0086A2ED /* YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEA1B91BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CEA1BE1BE7901A0086A2ED /* YNSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +76,7 @@
 		49C8D3C21BE878DF00E8EBF5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				49C8D3C51BE8791C00E8EBF5 /* Media.xcassets */,
+				49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -106,6 +108,7 @@
 				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
 				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
 				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
+				49C8D3CD1BE88E4500E8EBF5 /* re.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
 				49C8D3C21BE878DF00E8EBF5 /* Resources */,
 			);
@@ -222,7 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C8D3C61BE8791C00E8EBF5 /* Media.xcassets in Resources */,
+				49C8D3C61BE8791C00E8EBF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +278,7 @@
 			files = (
 				49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */,
 				49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */,
+				49C8D3CE1BE88E4500E8EBF5 /* re.swift in Sources */,
 				49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */,
 				49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */,
 			);
