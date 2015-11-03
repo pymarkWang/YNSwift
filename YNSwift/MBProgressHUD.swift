@@ -9,8 +9,8 @@
 import Foundation
 import MBProgressHUD
 
-extension MBProgressHUD {
-    func switchToSuccess(duration duration: NSTimeInterval?, labelText: String? = nil, completionBlock: (() -> Void)? = nil) {
+public extension MBProgressHUD {
+    public func switchToSuccess(duration duration: NSTimeInterval?, labelText: String? = nil, completionBlock: (() -> Void)? = nil) {
         self.customView = UIImageView(image: UIImage(named: "37x-Checkmark"))
         self.mode = MBProgressHUDMode.CustomView
         self.labelText = labelText
@@ -21,7 +21,7 @@ extension MBProgressHUD {
         self.completionBlock = completionBlock
     }
     
-    class func show() -> MBProgressHUD! {
+    public class func show() -> MBProgressHUD! {
         if let window = UIApplication.sharedApplication().delegate?.window {
             return MBProgressHUD.showHUDAddedTo(window, animated: true)
         }
