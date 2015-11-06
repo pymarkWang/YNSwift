@@ -11,6 +11,7 @@
 		49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */; };
 		49C8D3C61BE8791C00E8EBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */; };
 		49C8D3CE1BE88E4500E8EBF5 /* re.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3CD1BE88E4500E8EBF5 /* re.swift */; };
+		49C8D3D81BEC7BA000E8EBF5 /* NSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3D71BEC7BA000E8EBF5 /* NSTimer.swift */; };
 		49CEA1BF1BE7901A0086A2ED /* YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CEA1B41BE7901A0086A2ED /* YNSwift.framework */; };
 		49CEA1C41BE7901A0086A2ED /* YNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */; };
 		49CEA1D01BE793AA0086A2ED /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CE1BE793AA0086A2ED /* NSDate.swift */; };
@@ -36,6 +37,7 @@
 		49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
 		49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C8D3CD1BE88E4500E8EBF5 /* re.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = re.swift; sourceTree = "<group>"; };
+		49C8D3D71BEC7BA000E8EBF5 /* NSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimer.swift; sourceTree = "<group>"; };
 		49CEA1B41BE7901A0086A2ED /* YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CEA1B91BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CEA1BE1BE7901A0086A2ED /* YNSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		49C8D3CF1BE8AAFD00E8EBF5 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				49C8D3D71BEC7BA000E8EBF5 /* NSTimer.swift */,
+				49CEA1CE1BE793AA0086A2ED /* NSDate.swift */,
+				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
+				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
+				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
 		49CEA1AA1BE7901A0086A2ED = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +118,7 @@
 		49CEA1B61BE7901A0086A2ED /* YNSwift */ = {
 			isa = PBXGroup;
 			children = (
-				49CEA1CE1BE793AA0086A2ED /* NSDate.swift */,
-				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
-				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
-				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
+				49C8D3CF1BE8AAFD00E8EBF5 /* extension */,
 				49C8D3CD1BE88E4500E8EBF5 /* re.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
 				49C8D3C21BE878DF00E8EBF5 /* Resources */,
@@ -280,6 +291,7 @@
 				49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */,
 				49C8D3CE1BE88E4500E8EBF5 /* re.swift in Sources */,
 				49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */,
+				49C8D3D81BEC7BA000E8EBF5 /* NSTimer.swift in Sources */,
 				49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
