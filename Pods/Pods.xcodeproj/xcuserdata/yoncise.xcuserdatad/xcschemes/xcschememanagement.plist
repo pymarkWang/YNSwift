@@ -14,15 +14,45 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxBlocking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>ABCF2CE748F678486F6E763AC7445716</key>
+		<key>18DEBCBCF5FBF1D65B660B7E8F3E1ABB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E67AC57EA5CF37299E4625C8A52FBFC6</key>
+		<key>6DE3D4AC56199CC859B8645EE5699411</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D53E03B81E008F4ECF19321700C7538</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9902287C7AA1DE7CD2ED3827227F3B30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
