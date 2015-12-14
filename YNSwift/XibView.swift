@@ -10,7 +10,7 @@ import UIKit
 
 public class XibView: UIView {
 
-    var contentView: UIView!
+    public var contentView: UIView!
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -27,7 +27,6 @@ public class XibView: UIView {
 
     func setup() {
         self.contentView = NSBundle(forClass: self.dynamicType).loadNibNamed(self.getXibName(), owner: self, options: nil)[0] as! UIView
-        self.contentView.backgroundColor = UIColor.clearColor()
         self.contentView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         self.contentView.frame = self.bounds
         self.addSubview(self.contentView)
