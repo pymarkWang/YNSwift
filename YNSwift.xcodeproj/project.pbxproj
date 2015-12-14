@@ -16,6 +16,7 @@
 		49CEA1C41BE7901A0086A2ED /* YNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */; };
 		49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CF1BE793AA0086A2ED /* UIColor.swift */; };
 		49F4A0171C1408E2002D21D6 /* RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4A0161C1408E2002D21D6 /* RxSwift.swift */; };
+		49F809401C1E914A006A5DF5 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8093F1C1E914A006A5DF5 /* XibView.swift */; };
 		C7FB234D26B96F2539A2BBF3 /* Pods_YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180EEA62625501677B8C1460 /* Pods_YNSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		49CEA1C51BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CEA1CF1BE793AA0086A2ED /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		49F4A0161C1408E2002D21D6 /* RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift.swift; sourceTree = "<group>"; };
+		49F8093F1C1E914A006A5DF5 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				49F4A0161C1408E2002D21D6 /* RxSwift.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
 				49C8D3C21BE878DF00E8EBF5 /* Resources */,
+				49F8093F1C1E914A006A5DF5 /* XibView.swift */,
 			);
 			path = YNSwift;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */,
+				49F809401C1E914A006A5DF5 /* XibView.swift in Sources */,
 				49F4A0171C1408E2002D21D6 /* RxSwift.swift in Sources */,
 				49C8D3CE1BE88E4500E8EBF5 /* re.swift in Sources */,
 				49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */,
