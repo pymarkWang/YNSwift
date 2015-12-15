@@ -11,28 +11,30 @@ import UIKit
 public class XibView: UIView {
 
     public var contentView: UIView!
+    public var xibName: String {
+        return String(self.dynamicType)
+    }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setup()
     }
     
-    override init(frame: CGRect) {
+    // XCode bug
+    // IBdesignable will rendered failed if you don't override this method
+    override public init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    public override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         self.setup()
     }
 
-    func setup() {
-        self.contentView = NSBundle(forClass: self.dynamicType).loadNibNamed(self.getXibName(), owner: self, options: nil)[0] as! UIView
+    public func setup() {
+        self.contentView = NSBundle(forClass: self.dynamicType).loadNibNamed(self.xibName, owner: self, options: nil)[0] as! UIView
         self.contentView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         self.contentView.frame = self.bounds
         self.addSubview(self.contentView)
     }
-    
-    public func getXibName() -> String {
-        return String(self.dynamicType)
-    }
+
 }
