@@ -31,7 +31,7 @@ public class XibView: UIView {
     }
 
     public func setup() {
-        self.contentView = NSBundle.mainBundle().loadNibNamed(self.xibName, owner: self, options: nil)[0] as! UIView
+        self.contentView = NSBundle(forClass: self.dynamicType).loadNibNamed(self.xibName, owner: self, options: nil)[0] as! UIView
         self.contentView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         self.contentView.frame = self.bounds
         self.addSubview(self.contentView)
