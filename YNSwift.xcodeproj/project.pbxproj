@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491B6FCB1C3F8CFD000FD353 /* YNSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B6FCA1C3F8CFD000FD353 /* YNSegue.swift */; };
+		491B6FCE1C3F8E2E000FD353 /* YNShowSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B6FCD1C3F8E2E000FD353 /* YNShowSegue.swift */; };
+		491B6FD01C3F8E3B000FD353 /* YNModalSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B6FCF1C3F8E3B000FD353 /* YNModalSegue.swift */; };
+		491B6FD81C3FFDA0000FD353 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B6FD71C3FFD9F000FD353 /* Observable.swift */; };
 		49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */; };
 		49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */; };
 		49C8D3C61BE8791C00E8EBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */; };
@@ -15,7 +19,6 @@
 		49CEA1BF1BE7901A0086A2ED /* YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CEA1B41BE7901A0086A2ED /* YNSwift.framework */; };
 		49CEA1C41BE7901A0086A2ED /* YNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */; };
 		49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEA1CF1BE793AA0086A2ED /* UIColor.swift */; };
-		49F4A0171C1408E2002D21D6 /* RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4A0161C1408E2002D21D6 /* RxSwift.swift */; };
 		49F809401C1E914A006A5DF5 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8093F1C1E914A006A5DF5 /* XibView.swift */; };
 		C7FB234D26B96F2539A2BBF3 /* Pods_YNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180EEA62625501677B8C1460 /* Pods_YNSwift.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +37,10 @@
 		180EEA62625501677B8C1460 /* Pods_YNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB1396FC4322B6A5058DB79 /* Pods-YNSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		434A3EFE150B9D8E37A15DDC /* Pods-YNSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNSwift/Pods-YNSwift.release.xcconfig"; sourceTree = "<group>"; };
+		491B6FCA1C3F8CFD000FD353 /* YNSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSegue.swift; sourceTree = "<group>"; };
+		491B6FCD1C3F8E2E000FD353 /* YNShowSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNShowSegue.swift; sourceTree = "<group>"; };
+		491B6FCF1C3F8E3B000FD353 /* YNModalSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNModalSegue.swift; sourceTree = "<group>"; };
+		491B6FD71C3FFD9F000FD353 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
 		49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +52,6 @@
 		49CEA1C31BE7901A0086A2ED /* YNSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNSwiftTests.swift; sourceTree = "<group>"; };
 		49CEA1C51BE7901A0086A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CEA1CF1BE793AA0086A2ED /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		49F4A0161C1408E2002D21D6 /* RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift.swift; sourceTree = "<group>"; };
 		49F8093F1C1E914A006A5DF5 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		491B6FCC1C3F8D04000FD353 /* segue */ = {
+			isa = PBXGroup;
+			children = (
+				491B6FCA1C3F8CFD000FD353 /* YNSegue.swift */,
+				491B6FCD1C3F8E2E000FD353 /* YNShowSegue.swift */,
+				491B6FCF1C3F8E3B000FD353 /* YNModalSegue.swift */,
+			);
+			name = segue;
+			sourceTree = "<group>";
+		};
 		49C8D3C21BE878DF00E8EBF5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +108,7 @@
 				49CEA1CF1BE793AA0086A2ED /* UIColor.swift */,
 				49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */,
 				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
+				491B6FD71C3FFD9F000FD353 /* Observable.swift */,
 			);
 			name = extension;
 			sourceTree = "<group>";
@@ -119,9 +136,9 @@
 		49CEA1B61BE7901A0086A2ED /* YNSwift */ = {
 			isa = PBXGroup;
 			children = (
+				491B6FCC1C3F8D04000FD353 /* segue */,
 				49C8D3CF1BE8AAFD00E8EBF5 /* extension */,
 				49C8D3CD1BE88E4500E8EBF5 /* re.swift */,
-				49F4A0161C1408E2002D21D6 /* RxSwift.swift */,
 				49CEA1B91BE7901A0086A2ED /* Info.plist */,
 				49C8D3C21BE878DF00E8EBF5 /* Resources */,
 				49F8093F1C1E914A006A5DF5 /* XibView.swift */,
@@ -290,12 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491B6FD81C3FFDA0000FD353 /* Observable.swift in Sources */,
+				491B6FCB1C3F8CFD000FD353 /* YNSegue.swift in Sources */,
 				49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */,
 				49F809401C1E914A006A5DF5 /* XibView.swift in Sources */,
-				49F4A0171C1408E2002D21D6 /* RxSwift.swift in Sources */,
 				49C8D3CE1BE88E4500E8EBF5 /* re.swift in Sources */,
+				491B6FCE1C3F8E2E000FD353 /* YNShowSegue.swift in Sources */,
 				49CEA1D11BE793AA0086A2ED /* UIColor.swift in Sources */,
 				49C8D3D81BEC7BA000E8EBF5 /* NSTimer.swift in Sources */,
+				491B6FD01C3F8E3B000FD353 /* YNModalSegue.swift in Sources */,
 				49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
