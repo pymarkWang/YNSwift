@@ -12,9 +12,6 @@ import UIKit
 
 class YNModalSegue: YNSegue {
     override func perform() {
-        if let navigationController = self.destination as? UINavigationController {
-            navigationController.pushViewController(self.instantiated, animated: true)
-        }
-        self.source.presentViewController(self.destination, animated: true, completion: nil)
+        self.source.presentViewController(self.instantiated, animated: true, completion: nil)
     }
 }

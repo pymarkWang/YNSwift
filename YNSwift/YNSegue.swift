@@ -8,10 +8,9 @@
 
 import UIKit
 
-class YNSegue: UIStoryboardSegue {
+public class YNSegue: UIStoryboardSegue {
     var source: UIViewController
-    var destination: UIViewController
-    var instantiated: UIViewController
+    public var instantiated: UIViewController
     
     class func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
         let info = identifier.componentsSeparatedByString("@")
@@ -28,12 +27,7 @@ class YNSegue: UIStoryboardSegue {
     override init(identifier: String!, source: UIViewController, destination: UIViewController) {
         self.source = source
         self.instantiated = YNSegue.instantiateViewControllerWithIdentifier(identifier)
-        if destination is UINavigationController {
-            self.destination = destination
-        } else {
-            self.destination = self.instantiated
-        }
-        super.init(identifier: identifier, source: source, destination: self.destination)
+        super.init(identifier: identifier, source: source, destination: destination)
     }
 }
 
