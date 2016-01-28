@@ -11,7 +11,7 @@ import UIKit
 public class YNTextView: UITextView, UITextViewDelegate {
     
     var edited = false
-    var hint: String? {
+    public var hint: String? {
         didSet {
             if !self.edited {
                 self.text = self.hint
