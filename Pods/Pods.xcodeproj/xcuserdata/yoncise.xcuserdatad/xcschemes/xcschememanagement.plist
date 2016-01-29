@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,25 +39,45 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>18DEBCBCF5FBF1D65B660B7E8F3E1ABB</key>
+		<key>05094CC4A047119F7ADC14EE74C4881C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6DE3D4AC56199CC859B8645EE5699411</key>
+		<key>0778D842197820A40B3E01870734A503</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D53E03B81E008F4ECF19321700C7538</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9902287C7AA1DE7CD2ED3827227F3B30</key>
+		<key>73CE11B6FB956B7BDD71BF37D8EB7F8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>888397FB05A443D6772B119CC09DA63F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE652196DACF4E351A2FE96A236BB77A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5D43F0840AE92CA3A76836F6C010C26</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -84,14 +84,20 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-YNSwift/Alamofire.framework"
+  install_framework "Pods-YNSwift/AlamofireImage.framework"
   install_framework "Pods-YNSwift/MBProgressHUD.framework"
   install_framework "Pods-YNSwift/RxBlocking.framework"
   install_framework "Pods-YNSwift/RxCocoa.framework"
   install_framework "Pods-YNSwift/RxSwift.framework"
+  install_framework "Pods-YNSwift/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-YNSwift/Alamofire.framework"
+  install_framework "Pods-YNSwift/AlamofireImage.framework"
   install_framework "Pods-YNSwift/MBProgressHUD.framework"
   install_framework "Pods-YNSwift/RxBlocking.framework"
   install_framework "Pods-YNSwift/RxCocoa.framework"
   install_framework "Pods-YNSwift/RxSwift.framework"
+  install_framework "Pods-YNSwift/SwiftyJSON.framework"
 fi

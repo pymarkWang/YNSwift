@@ -136,6 +136,8 @@ Pod::Spec.new do |s|
   s.dependency 'RxSwift', '~> 2.0.0'
   s.dependency 'RxCocoa', '~> 2.0.0'
   s.dependency 'RxBlocking', '~> 2.0.0'
-  
+  s.dependency 'AlamofireImage', '~> 2.0'
+  s.dependency 'SwiftyJSON', '~> 2.0'
+  s.dependency 'Alamofire', '~> 3.0'
 
 end
