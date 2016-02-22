@@ -25,8 +25,8 @@ public class YNTextView: UITextView, UITextViewDelegate {
     public var onDidEndEditing: ((YNTextView) -> Void)?
     var heightConstraint: NSLayoutConstraint?
     
-    var maxHeight: CGFloat?
-    var minHeight: CGFloat?
+    public var maxHeight: CGFloat?
+    public var minHeight: CGFloat?
     
     override public var text: String! {
         get {

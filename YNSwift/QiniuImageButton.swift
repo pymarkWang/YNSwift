@@ -18,6 +18,7 @@ public class QiniuImageButton: UIButton {
     public var metaImage: QiniuImage! {
         didSet {
             self.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
+            self.setImage(nil, forState: UIControlState.Normal)
             if self.metaImage == nil {
                 self.heightConstraint.constant = 0
                 self.widthConstraint.constant = 0
