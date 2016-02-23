@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class QiniuImage {
     
-    public var id: Int
+    public var id: Int?
     public var url: String
     public var width: CGFloat
     public var height: CGFloat
@@ -21,6 +21,13 @@ public class QiniuImage {
         self.url = json["url"].stringValue
         self.width = CGFloat(json["width"].doubleValue)
         self.height = CGFloat(json["height"].doubleValue)
+    }
+    
+    public init(url: String, width: CGFloat, height: CGFloat) {
+        self.id = nil
+        self.url = url
+        self.width = width
+        self.height = height
     }
     
     public func getUrlForMaxWidth(maxWidth: CGFloat, maxHeight: CGFloat) -> String {
