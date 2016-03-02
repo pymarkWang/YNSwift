@@ -19,7 +19,6 @@
 		496486A91C50C32F008C9A2C /* YNTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496486A81C50C32F008C9A2C /* YNTextView.swift */; };
 		49B4F3241C55D4E60094A438 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4F3231C55D4E60094A438 /* KeyboardLayoutConstraint.swift */; };
 		49B4F3261C55D4FA0094A438 /* LocationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4F3251C55D4FA0094A438 /* LocationTransform.swift */; };
-		49B860281C46337E004641DF /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B860271C46337E004641DF /* NSAttributedString.swift */; };
 		49C8D3BE1BE86EB200E8EBF5 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */; };
 		49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */; };
 		49C8D3C61BE8791C00E8EBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */; };
@@ -58,7 +57,6 @@
 		496486A81C50C32F008C9A2C /* YNTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTextView.swift; sourceTree = "<group>"; };
 		49B4F3231C55D4E60094A438 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		49B4F3251C55D4FA0094A438 /* LocationTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTransform.swift; sourceTree = "<group>"; };
-		49B860271C46337E004641DF /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		49C8D3BD1BE86EB200E8EBF5 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
 		49C8D3C51BE8791C00E8EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				49C8D3BF1BE8707B00E8EBF5 /* MBProgressHUD.swift */,
 				491B6FD71C3FFD9F000FD353 /* Observable.swift */,
 				491B6FE51C43F12A000FD353 /* NSDate.swift */,
-				49B860271C46337E004641DF /* NSAttributedString.swift */,
 				4938E4481C5B6B6200FC977C /* UIButton.swift */,
 			);
 			name = extension;
@@ -375,7 +372,6 @@
 				491B6FD01C3F8E3B000FD353 /* YNModalSegue.swift in Sources */,
 				49C8D3C01BE8707B00E8EBF5 /* MBProgressHUD.swift in Sources */,
 				491B6FE61C43F12A000FD353 /* NSDate.swift in Sources */,
-				49B860281C46337E004641DF /* NSAttributedString.swift in Sources */,
 				491B6FE21C4111A9000FD353 /* YNTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

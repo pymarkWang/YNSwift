@@ -17,6 +17,10 @@ public class QiniuImageButton: UIButton {
     var minEdge: CGFloat = 60
     public var metaImage: QiniuImage! {
         didSet {
+            if oldValue?.url == self.metaImage.url {
+                // ignore repeat set for same image
+                return
+            }
             self.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
             self.setImage(nil, forState: UIControlState.Normal)
             if self.metaImage == nil {
