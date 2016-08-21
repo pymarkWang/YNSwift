@@ -36,7 +36,12 @@ public class QiniuImageButton: UIButton {
                 let scaledWidth = ratio * metaImage.width
                 self.heightConstraint.constant = CGFloat(min(scaledHeight, maxHeight))
                 self.widthConstraint.constant = CGFloat(min(scaledWidth, maxWidth))
-                self.af_setImageWithURL(metaImage.getUrlForMaxWidth(scaledWidth, maxHeight: scaledHeight), forState: UIControlState.Normal, completion: nil)
+                self.af_setImageWithURL(metaImage.getUrlForMaxWidth(scaledWidth, maxHeight: scaledHeight), forState: UIControlState.Normal, completion: { response in
+                    if metaImage.url != self.metaImage?.url {
+                        self.setImage(nil, forState: UIControlState.Normal) // ignore old value
+                    }
+                })
+                
             } else {
                 self.heightConstraint.constant = 0
                 self.widthConstraint.constant = 0
