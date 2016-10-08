@@ -24,7 +24,7 @@ public class YNSegue: UIStoryboardSegue {
         }
     }
     
-    override init(identifier: String!, source: UIViewController, destination: UIViewController) {
+    public override init(identifier: String!, source: UIViewController, destination: UIViewController) {
         self.source = source
         self.instantiated = YNSegue.instantiateViewControllerWithIdentifier(identifier)
         super.init(identifier: identifier, source: source, destination: destination)
