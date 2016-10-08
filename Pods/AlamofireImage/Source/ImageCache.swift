@@ -145,14 +145,14 @@ public class AutoPurgingImageCache: ImageRequestCache {
         self.currentMemoryUsage = 0
 
         self.synchronizationQueue = {
-            let name = String(format: "com.alamofire.autopurgingimagecache-%08%08", arc4random(), arc4random())
+            let name = String(format: "com.alamofire.autopurgingimagecache-%08x%08x", arc4random(), arc4random())
             return dispatch_queue_create(name, DISPATCH_QUEUE_CONCURRENT)
         }()
 
-        #if os(iOS)
+        #if os(iOS) || os(tvOS)
             NSNotificationCenter.defaultCenter().addObserver(
                 self,
-                selector: "removeAllImages",
+                selector: #selector(AutoPurgingImageCache.removeAllImages),
                 name: UIApplicationDidReceiveMemoryWarningNotification,
                 object: nil
             )

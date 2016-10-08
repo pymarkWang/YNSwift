@@ -43,6 +43,7 @@ extension Request {
         "image/bmp",
         "image/x-bmp",
         "image/x-xbitmap",
+        "image/x-ms-bmp",
         "image/x-win-bitmap"
     ]
 
@@ -139,7 +140,7 @@ extension Request {
     }
 
     private class func imageFromResponseData(data: NSData, imageScale: CGFloat) throws -> UIImage {
-        if let image = UIImage(data: data, scale: imageScale) {
+        if let image = UIImage.af_threadSafeImageWithData(data, scale: imageScale) {
             return image
         }
 
@@ -225,11 +226,15 @@ extension Request {
 
     private class func contentTypeValidationError() -> NSError {
         let failureReason = "Failed to validate response due to unacceptable content type"
-        return Error.errorWithCode(NSURLErrorCannotDecodeContentData, failureReason: failureReason)
+        let userInfo = [NSLocalizedFailureReasonErrorKey: failureReason]
+
+        return NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotDecodeContentData, userInfo: userInfo)
     }
 
     private class func imageDataError() -> NSError {
         let failureReason = "Failed to create a valid Image from the response data"
-        return Error.errorWithCode(NSURLErrorCannotDecodeContentData, failureReason: failureReason)
+        let userInfo = [NSLocalizedFailureReasonErrorKey: failureReason]
+
+        return NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotDecodeRawData, userInfo: userInfo)
     }
 }
