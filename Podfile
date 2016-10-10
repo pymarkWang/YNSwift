@@ -9,7 +9,7 @@ target 'YNSwift' do
     pod 'RxBlocking', '~> 2.0.0'
     pod 'Alamofire', '~> 3.0'
     pod 'AlamofireImage', '~> 2.0'
-    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'SwiftyJSON', '~> 2.0'
 end
 
 target 'YNSwiftTests' do
