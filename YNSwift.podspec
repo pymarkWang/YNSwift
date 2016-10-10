@@ -137,7 +137,7 @@ Pod::Spec.new do |s|
   s.dependency 'RxCocoa', '~> 2.0.0'
   s.dependency 'RxBlocking', '~> 2.0.0'
   s.dependency 'AlamofireImage', '~> 2.0'
-  s.dependency 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  s.dependency 'SwiftyJSON', '~> 3.0'
   s.dependency 'Alamofire', '~> 3.0'
 
 end
