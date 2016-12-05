@@ -10,7 +10,7 @@ import UIKit
 
 public class QiniuImageButton: UIButton {
     
-    let defaultMaxHeightWidth: CGFloat = 72
+    let defaultMaxHeightWidth: CGFloat = 120
     var heightConstraint: NSLayoutConstraint!
     var widthConstraint: NSLayoutConstraint!
     public var maxHeight: CGFloat!
@@ -54,21 +54,24 @@ public class QiniuImageButton: UIButton {
         super.awakeFromNib()
         for constraint in self.constraints {
             if constraint.firstAttribute == NSLayoutAttribute.Height {
-                if constraint == nil {
-                    self.maxHeight = self.defaultMaxHeightWidth
-                } else {
-                    self.heightConstraint = constraint
-                    self.maxHeight = self.heightConstraint.constant
-                }
+                self.heightConstraint = constraint
             } else if constraint.firstAttribute == NSLayoutAttribute.Width {
-                if constraint == nil {
-                    self.maxWidth = self.defaultMaxHeightWidth
-                } else {
-                    self.widthConstraint = constraint
-                    self.maxWidth = self.widthConstraint.constant
-                }
+                self.widthConstraint = constraint
             }
         }
+        // use default value if there is no width or height constraint
+        if self.heightConstraint == nil {
+            self.heightConstraint = NSLayoutConstraint()
+            self.heightConstraint.constant = self.defaultMaxHeightWidth
+        }
+        
+        if self.widthConstraint == nil {
+            self.widthConstraint = NSLayoutConstraint()
+            self.widthConstraint.constant = self.defaultMaxHeightWidth
+        }
+        
+        self.maxHeight = self.heightConstraint.constant
+        self.maxWidth = self.widthConstraint.constant
     }
 
 }
