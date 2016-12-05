@@ -61,13 +61,25 @@ public class QiniuImageButton: UIButton {
         }
         // use default value if there is no width or height constraint
         if self.heightConstraint == nil {
-            self.heightConstraint = NSLayoutConstraint()
-            self.heightConstraint.constant = self.defaultMaxHeightWidth
+            self.heightConstraint = NSLayoutConstraint(
+                    item: self,
+                    attribute: NSLayoutAttribute.Height,
+                    relatedBy: NSLayoutRelation.Equal,
+                    toItem: nil,
+                    attribute: NSLayoutAttribute.NotAnAttribute,
+                    multiplier: 1.0,
+                    constant: self.defaultMaxHeightWidth)
         }
         
         if self.widthConstraint == nil {
-            self.widthConstraint = NSLayoutConstraint()
-            self.widthConstraint.constant = self.defaultMaxHeightWidth
+            self.heightConstraint = NSLayoutConstraint(
+                    item: self,
+                    attribute: NSLayoutAttribute.Width,
+                    relatedBy: NSLayoutRelation.Equal,
+                    toItem: nil,
+                    attribute: NSLayoutAttribute.NotAnAttribute,
+                    multiplier: 1.0,
+                    constant: self.defaultMaxHeightWidth)
         }
         
         self.maxHeight = self.heightConstraint.constant
