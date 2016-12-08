@@ -10,12 +10,22 @@ import UIKit
 
 public class QiniuImageButton: UIButton {
     
-    let defaultMaxHeightWidth: CGFloat = 120
-    var heightConstraint: NSLayoutConstraint!
-    var widthConstraint: NSLayoutConstraint!
+let defaultMaxHeightWidth: CGFloat = 120
+    public var heightConstraint: NSLayoutConstraint! {
+        didSet {
+            self.delegate?.onHeightConstraintChange!(self, heightConstraint: self.heightConstraint)
+        }
+    }
+    public var widthConstraint: NSLayoutConstraint! {
+        didSet {
+            self.delegate?.onWidthConstraintChange!(self, widthConstraint: self.widthConstraint)
+        }
+    }
     public var maxHeight: CGFloat!
     public var maxWidth: CGFloat!
     var minEdge: CGFloat = 60
+    
+    public weak var delegate: QiniuImageButtonDelegate?
     public var metaImage: QiniuImage? {
         didSet {
             self.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
@@ -27,17 +37,12 @@ public class QiniuImageButton: UIButton {
                 }
                 self.setImage(nil, forState: UIControlState.Normal)
 
-                let minWidthRatio = self.minEdge / metaImage.height
-                let minHeightRatio = self.minEdge / metaImage.width
-                let widthRatio = max(self.maxWidth / metaImage.width, minWidthRatio)
-                let heightRatio = max(self.maxHeight / metaImage.height, minHeightRatio)
-                let ratio = min(heightRatio, widthRatio)
+                let scaledSize = calculateScaledSizeForConstraints(metaImage)
+                let constraintsValues = calculateConstraintsValues(scaledSize.width, scaledHeight: scaledSize.height)
+                self.heightConstraint.constant = constraintsValues.height
+                self.widthConstraint.constant = constraintsValues.width
                 
-                let scaledHeight = ratio * metaImage.height
-                let scaledWidth = ratio * metaImage.width
-                self.heightConstraint.constant = CGFloat(min(scaledHeight, maxHeight))
-                self.widthConstraint.constant = CGFloat(min(scaledWidth, maxWidth))
-                self.af_setImageWithURL(metaImage.getUrlForMaxWidth(scaledWidth, maxHeight: scaledHeight), forState: UIControlState.Normal, completion: { response in
+                self.af_setImageWithURL(metaImage.getUrlForMaxWidth(scaledSize.width, maxHeight: scaledSize.height), forState: UIControlState.Normal, completion: { response in
                     if metaImage.url != self.metaImage?.url {
                         self.setImage(nil, forState: UIControlState.Normal) // ignore old value
                     }
@@ -72,7 +77,7 @@ public class QiniuImageButton: UIButton {
         }
         
         if self.widthConstraint == nil {
-            self.heightConstraint = NSLayoutConstraint(
+            self.widthConstraint = NSLayoutConstraint(
                     item: self,
                     attribute: NSLayoutAttribute.Width,
                     relatedBy: NSLayoutRelation.Equal,
@@ -84,6 +89,35 @@ public class QiniuImageButton: UIButton {
         
         self.maxHeight = self.heightConstraint.constant
         self.maxWidth = self.widthConstraint.constant
+        self.addTarget(self, action: #selector(QiniuImageButton.getClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
     }
+    
+    public func calculateScaledSizeForConstraints(image: QiniuImage) -> CGSize {
+        
+        let minWidthRatio = self.minEdge / image.height
+        let minHeightRatio = self.minEdge / image.width
+        let widthRatio = max(self.maxWidth / image.width, minWidthRatio)
+        let heightRatio = max(self.maxHeight / image.height, minHeightRatio)
+        let ratio = min(heightRatio, widthRatio)
+        
+        let scaledHeight = ratio * image.height
+        let scaledWidth = ratio * image.width
+        
+        return CGSizeMake(scaledWidth, scaledHeight)
+    }
+    
+    public func calculateConstraintsValues(scaledWidth: CGFloat, scaledHeight: CGFloat) -> CGSize {
+        return CGSizeMake(min(scaledWidth, maxWidth), min(scaledHeight, maxHeight))
+    }
+    
+    func getClicked(sender: UIButton) {
+        self.delegate?.onButtonGetClicked!(self)
+    }
+    
+}
 
+@objc public protocol QiniuImageButtonDelegate: class {
+    optional func onButtonGetClicked(button: QiniuImageButton)
+    optional func onHeightConstraintChange(button: QiniuImageButton, heightConstraint: NSLayoutConstraint?)
+    optional func onWidthConstraintChange(button: QiniuImageButton, widthConstraint: NSLayoutConstraint?)
 }
